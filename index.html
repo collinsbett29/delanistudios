@@ -7,6 +7,9 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
         <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/bootstrap.min.js"></script>
         <title>Delani</title>
     
     </head>
@@ -110,16 +113,17 @@
                     margin-right: auto;
                     }
                 </style>
+               
                 <div class="col-4">
-                    <img src="img/design.png" alt="" class="center">
+                   <a href="#" data-toggle="popover" data-content="Disabled popover"><img src="img/design.png" alt="" class="center"></a>
                     <p class="text-center">DESIGN</p>
                 </div>
                 <div class="col-4">
-                    <img src="img/dev.png" alt="" class="center">
+                   <a href="#" data-toggle="popover" data-content="Disabled popover"> <img src="img/dev.png" alt="" class="center" ></a>
                     <p class="text-center">DEVELOPMENT</p>
                 </div>
                 <div class="col-4">
-                    <img src="img/product.png" alt="" class="center">
+                   <a href="#" data-toggle="popover" data-content="Disabled popover"> <img src="img/product.png" alt="" class="center"></a>
                     <p class="text-center">PRODUCT MANAGEMENT</p>
                 </div>
             </div>
@@ -160,6 +164,7 @@
                 <div class="col-3">
                     <img src="img/portfolio./work8.jpg" alt="" class="img-thumbnail">
                 </div>
+                
             </div>
             <br>
             <br>
@@ -270,7 +275,19 @@
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
-        <script type="text/javascript" src="js/scripts.js"></script>
+       
+     
+        <script>
+
+                $(function () {
+
+                $('[data-toggle="popover"]').popover()
+
+                });
+
+        </script>
+        
+      
+       
     </body>
 </html>
